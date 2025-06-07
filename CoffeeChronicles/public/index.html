@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Coffee Chronicles</title>
+  <link rel="stylesheet" href="styles.css">
+  <style> 
+   
+  </style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-animation">
+      <div class="coffee-cup"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#history">Coffee History</a></li>
+      <li><a href="#brewing-methods">Brewing Methods</a></li>
+      <li><a href="#download-pdf">Download PDFs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to The Coffee Chronicles</h2>
+      <p>Discover the rich history and culture of coffee.</p>
+      <img src="images/close up beans.webp" alt="Close-up of roasted coffee beans" class="section-image" />
+      <button class="cta-button" onclick="toggleLearnMore()">Learn More</button>
+
+      <!-- Hidden Learn More Content -->
+      <div id="learn-more" style="display: none; margin-top: 20px;">
+        <h2>Explore the Origins and Culture of Coffee</h2>
+
+        <h3>1. The Origins of Coffee</h3>
+        <p>From the ancient forests of Ethiopia to the Arabian Peninsula, coffee began as a mystical energy-boosting fruit. It later became a global phenomenon.</p>
+        <img src="images/Traditional Ethiopian coffee ceremony.webp" alt="Traditional Ethiopian coffee ceremony" class="section-image" />
+
+        <h3>2. Coffee in Different Cultures</h3>
+        <ul>
+          <li><strong>Italy:</strong> Espresso is a daily ritual.</li>
+          <li><strong>Turkey:</strong> Thick, sweet brews with tradition.</li>
+          <li><strong>Ethiopia:</strong> Coffee ceremonies with community and pride.</li>
+          <li><strong>Europe & Middle East:</strong> Coffeehouses shaped discussion and art.</li>
+        </ul>
+        <img src="images/A cup of Italian espresso.webp" alt="A cup of Italian espresso" class="section-image" />
+
+        <h3>3. Coffee’s Journey to the Modern World</h3>
+        <p>Through colonial trade routes, coffee spread rapidly. Today, it powers the Third Wave movement—focusing on sustainability and quality.</p>
+
+        <h3>4. Fun Facts</h3>
+        <ul>
+          <li>The word “coffee” comes from the Arabic word <em>qahwa</em>.</li>
+          <li>The first webcam was used to monitor a coffee pot at Cambridge University.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Coffee History Section -->
+    <section id="history">
+      <h2>Coffee History</h2>
+      <p>Explore how coffee has shaped societies across the globe.</p>
+      <button class="cta-button" onclick="toggleCoffeeHistory()">Read More</button>
+
+      <!-- Detailed Coffee History Content - initially hidden -->
+      <div id="coffee-history-details">
+        <h3>1. The Origins of Coffee: From Myth to Reality</h3>
+        <img src="images/Ethiopian highlands, origin of coffee.jpeg" alt="Ethiopian highlands, origin of coffee" class="section-image" />
+        <p>The story of coffee begins in the highlands of Ethiopia, where legend tells of Kaldi, a goat herder who noticed his goats becoming unusually energetic after eating red coffee cherries. Curious, Kaldi tried the berries himself and experienced a newfound alertness. While this story is part myth, scientists agree that coffee plants originated in this region around the 9th century.</p>
+        <p>Coffee’s energizing effects soon caught the attention of local tribes, who brewed the first simple coffee infusions. This discovery marked the start of a beverage that would transform human culture.</p>
+
+        <h3>2. Coffee and the Rise of the Arabian Coffee Culture</h3>
+        <img src="images/Traditional Arabian coffeehouse.webp" alt="Traditioal Arabian coffeehouse" class="section-image" />
+        <p>Coffee made its way to the Arabian Peninsula by the 15th century, where Yemen became the first major center of coffee cultivation. Sufi monks used coffee to stay awake during their long night prayers and rituals, seeing it as a spiritual aid.</p>
+        <p>Cities like Mecca and Cairo saw the rise of the first true coffeehouses — called <em>qahveh khaneh</em> — which quickly became places of social interaction. These coffeehouses were much more than just cafés: they were hubs of cultural exchange, political discussion, music, poetry, and even gambling. It’s here that coffee earned its reputation as a drink that stimulates both body and mind.</p>
+
+        <h3>3. Coffee’s Journey to Europe and Beyond</h3>
+        <img src="images/Historic European coffeehouse.jpeg" alt="Historic European coffeehouse" class="section-image" />
+        <p>By the 17th century, coffee had traveled through trade routes to Europe. Initially met with suspicion and religious opposition (some called it the “bitter invention of Satan”), coffee soon became wildly popular. Coffeehouses opened across cities like London, Paris, and Vienna, where they earned nicknames like <em>“penny universities”</em> — for the low cost of a cup, patrons gained access to intellectual conversations and the latest news.</p>
+        <p>These coffeehouses played a pivotal role in shaping Western society, providing spaces where thinkers, writers, and revolutionaries met. They fueled discussions that helped spark the Enlightenment and political revolutions.</p>
+
+        <h3>4. The Global Spread of Coffee Cultivation</h3>
+        <img src="images/Coffee plantation in Latin America.jpg" alt="Coffee plantation in Latin America" class="section-image" />
+        <p>European colonial powers introduced coffee cultivation to tropical regions worldwide to meet growing demand. Coffee plantations spread rapidly to the Caribbean, Latin America, Southeast Asia, and Africa.</p>
+        <p>Today, countries like Brazil, Colombia, Ethiopia, and Vietnam are some of the largest producers, contributing to a complex global industry that supports millions of farmers and workers.</p>
+
+        <h3>5. Coffee in Modern Culture: The Third Wave Movement</h3>
+        <img src="images/Modern third wave coffee shop.jpg" alt="Modern third wave coffee shop" class="section-image" />
+        <p>In recent decades, a “Third Wave” coffee movement has emerged, treating coffee as an artisanal product rather than just a commodity. This movement emphasizes:</p>
+        <ul>
+          <li><strong>Sustainability:</strong> Supporting ethical farming practices that protect the environment and fair wages for growers.</li>
+          <li><strong>Quality:</strong> Focusing on bean origin, roast level, and brewing methods to bring out unique flavors.</li>
+          <li><strong>Transparency:</strong> Tracing coffee from farm to cup with clear information about its journey.</li>
+        </ul>
+        <p>Coffee culture today celebrates diversity, craftsmanship, and community — from the traditional Ethiopian coffee ceremonies to hip third-wave cafés around the world.</p>
+
+        <h3>6. Fun Facts About Coffee History</h3>
+        <ul>
+          <li>The word “coffee” comes from the Arabic word <em>qahwa</em>, which originally referred to a type of wine or intoxicating beverage.</li>
+          <li>The first-ever webcam was invented at Cambridge University to monitor a coffee pot so students wouldn’t have to walk all the way to an empty pot.</li>
+          <li>Coffeehouses were once called “Schools of the Wise” because so many intellectuals and artists gathered there.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Brewing Methods Section -->
+    <section id="brewing-methods">
+      <h2>Brewing Methods</h2>
+      <p>Learn about different ways to brew your coffee to perfection.</p>
+      <img src="images/brewing methods.jpg" alt="Various coffee brewing methods" class="section-image" />
+      <button class="cta-button" onclick="alert('More content coming soon!')">Explore</button>
+    </section>
+
+    <!-- Download PDF Section -->
+<section id="download-pdf">
+  <h2>Download PDF</h2>
+  <p>Choose the PDF you want to download about coffee skills and evaluation.</p>
+  <select id="pdf-select" aria-label="Select PDF to download">
+    <option value="">-- Select a PDF --</option>
+   <option value="pdf/coffee_tasting_guide.pdf">Coffee Tasting Guide</option>
+    <option value="pdf/brewing_methods.pdf">Brewing Methods</option>
+    <option value="pdf/coffee_tasting_guide.pdf">Barista Techniques</option>
+  </select>
+  <button class="cta-button" onclick="downloadPDF()">Download</button>
+</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Coffee Chronicles. All Rights Reserved.</p>
+    <p>Follow us on 
+      <a href="https://www.facebook.com/tinotenda.mlacha.3/" target="_blank">Facebook</a> | 
+      <a href="https://instagram.com/baristatino" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    // Hide loading screen after page load
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    // Toggle Learn More content on Home section
+    function toggleLearnMore() {
+      const learnMore = document.getElementById('learn-more');
+      if (learnMore.style.display === 'none' || learnMore.style.display === '') {
+        learnMore.style.display = 'block';
+      } else {
+        learnMore.style.display = 'none';
+      }
+    }
+
+    // Toggle Coffee History detailed content
+    function toggleCoffeeHistory() {
+      const details = document.getElementById('coffee-history-details');
+      if (details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'block';
+      } else {
+        details.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>
